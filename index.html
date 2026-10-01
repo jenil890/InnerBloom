@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnerBloom — Student Mental Health & Wellness Blog</title>
+  <meta name="description" content="A student mental health and wellness blogging website featuring tips on stress management, self-care routines, motivation, and mindfulness.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.svg" alt="InnerBloom Logo" class="logo-img" width="38" height="38">
+            <span>InnerBloom</span>
+          </a>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="mental-health.html">Mental Health</a></li>
+          <li><a href="self-care.html">Self Care</a></li>
+          <li><a href="motivation.html">Motivation</a></li>
+          <li><a href="productivity.html">Productivity</a></li>
+          <li><a href="mindfulness.html">Mindfulness</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <span class="hero-badge">Wellness &bull; Growth &bull; Student Life</span>
+      <h1 class="hero-title">Nurture Your Inner Calm</h1>
+      <p class="hero-subtitle">
+        Simple, honest, and practical advice for navigating student life, managing exam pressure, building healthy routines, and finding daily peace.
+      </p>
+      <div class="hero-buttons">
+        <a href="#articles" class="btn btn-primary">Read Articles</a>
+        <a href="about.html" class="btn btn-secondary">About Our Mission</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-content-section" id="articles">
+    <div class="container">
+      
+      <!-- Search & Filter Controls -->
+      <section class="search-filter-section">
+        <div class="search-box-wrapper">
+          <form class="search-form" id="searchForm" onsubmit="event.preventDefault();">
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="search-input" 
+              placeholder="Search articles by title, topic, or keyword (e.g. stress, sleep, study)..." 
+              autocomplete="off"
+            >
+            <button type="submit" class="search-btn">Search</button>
+          </form>
+
+          <div class="filter-tags">
+            <span class="filter-label">Filter by Topic:</span>
+            <button type="button" class="filter-pill active" data-filter="all">All</button>
+            <button type="button" class="filter-pill" data-filter="Mental Health">Mental Health</button>
+            <button type="button" class="filter-pill" data-filter="Self Care">Self Care</button>
+            <button type="button" class="filter-pill" data-filter="Motivation">Motivation</button>
+            <button type="button" class="filter-pill" data-filter="Productivity">Productivity</button>
+            <button type="button" class="filter-pill" data-filter="Mindfulness">Mindfulness</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Title -->
+      <div class="section-title-wrap" style="margin-top: 30px;">
+        <h2 class="section-title">Featured Articles</h2>
+        <p class="section-subtitle">Helpful reads on student mental wellness and everyday habits.</p>
+      </div>
+
+      <!-- Blog Grid (Populated by JavaScript) -->
+      <div class="blogs-grid" id="blogsGrid"></div>
+
+    </div>
+  </main>
+
+  <!-- Category Showcase Section -->
+  <section class="categories-showcase">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-title">Explore Topics</h2>
+        <p class="section-subtitle">Click on any category to view dedicated student guides and articles.</p>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-box">
+          <h3 class="cat-title">Mental Health</h3>
+          <p class="cat-desc">Managing stress, dealing with anxiety, and emotional wellbeing.</p>
+          <a href="mental-health.html" class="cat-link">View Guides &rarr;</a>
+        </div>
+
+        <div class="category-box">
+          <h3 class="cat-title">Self Care</h3>
+          <p class="cat-desc">Healthy sleep, regular meals, taking breaks, and personal routines.</p>
+          <a href="self-care.html" class="cat-link">View Guides &rarr;</a>
+        </div>
+
+        <div class="category-box">
+          <h3 class="cat-title">Motivation</h3>
+          <p class="cat-desc">Goal setting, positive mindset, overcoming doubt, and confidence.</p>
+          <a href="motivation.html" class="cat-link">View Guides &rarr;</a>
+        </div>
+
+        <div class="category-box">
+          <h3 class="cat-title">Productivity</h3>
+          <p class="cat-desc">Smart study habits, beating procrastination, and time management.</p>
+          <a href="productivity.html" class="cat-link">View Guides &rarr;</a>
+        </div>
+
+        <div class="category-box">
+          <h3 class="cat-title">Mindfulness</h3>
+          <p class="cat-desc">Simple breathing exercises, staying present, and relaxing your mind.</p>
+          <a href="mindfulness.html" class="cat-link">View Guides &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="logo.svg" alt="InnerBloom Logo" class="footer-logo-img" width="26" height="26">
+          <span class="footer-brand-name">InnerBloom</span>
+        </div>
+        <p class="footer-summary">
+          A calm, student-focused space for emotional wellbeing, practical daily routines, and personal growth.
+        </p>
+        <p class="footer-copyright">
+          &copy; 2026 InnerBloom. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Reader for Full Article View -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness — InnerBloom</title>
+  <meta name="description" content="Simple meditation, deep breathing exercises, and grounding techniques for college students.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-category="Mindfulness">
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.svg" alt="InnerBloom Logo" class="logo-img" width="38" height="38">
+            <span>InnerBloom</span>
+          </a>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mental-health.html">Mental Health</a></li>
+          <li><a href="self-care.html">Self Care</a></li>
+          <li><a href="motivation.html">Motivation</a></li>
+          <li><a href="productivity.html">Productivity</a></li>
+          <li><a href="mindfulness.html" class="active">Mindfulness</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Category Banner -->
+  <section class="hero-section">
+    <div class="container">
+      <span class="hero-badge">Category Archive</span>
+      <h1 class="hero-title">Mindfulness & Grounding</h1>
+      <p class="hero-subtitle">
+        Simple breathing exercises and mindfulness routines to help you stay centered and calm during hectic student days.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content-section">
+    <div class="container">
+      
+      <!-- Search Box inside category -->
+      <section class="search-filter-section" style="padding-top: 10px;">
+        <div class="search-box-wrapper">
+          <form class="search-form" id="searchForm" onsubmit="event.preventDefault();">
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="search-input" 
+              placeholder="Search mindfulness articles..." 
+              autocomplete="off"
+            >
+            <button type="submit" class="search-btn">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <div class="section-title-wrap" style="margin-top: 20px;">
+        <h2 class="section-title">Mindfulness Articles</h2>
+      </div>
+
+      <!-- Blog Grid (Automatically filtered by script.js) -->
+      <div class="blogs-grid" id="blogsGrid"></div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="logo.svg" alt="InnerBloom Logo" class="footer-logo-img" width="26" height="26">
+          <span class="footer-brand-name">InnerBloom</span>
+        </div>
+        <p class="footer-summary">
+          A calm, student-focused space for emotional wellbeing, practical daily routines, and personal growth.
+        </p>
+        <p class="footer-copyright">
+          &copy; 2026 InnerBloom. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Reader -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
